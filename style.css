@@ -1,0 +1,351 @@
+/*BODY*/
+
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+
+
+header nav ul {
+    flex-wrap: wrap;
+    display: flex;
+    list-style-type: none;
+    flex-grow: inherit;
+    margin: 0;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header nav li {
+    flex-grow: inherit;
+    min-width: 6em;
+}
+
+header nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    line-height: 3em;
+    transition: .3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    border-radius: 5%;
+    border: 2px;
+    padding-bottom: .5em;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    justify-content: center;
+    padding: 1%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    animation: scaleUp 2s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+article,
+section {
+    width: 80%;
+    justify-content: center;
+    padding: 1%;
+    margin: auto;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-radius: 10%;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+img {
+    border: solid white 5px;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    width: 20em;
+    height: 20em;
+    align-items: center;
+}
+
+img:hover {
+    transform: scale(1.20);
+    /* Maak de foto 20% groter bij hover */
+}
+
+
+/*HOME*/
+
+.home {
+    background-image: url(fotos/background/backgroundhome.jpg);
+    height: 100vh;
+}
+
+.home nav ul {
+    background-color: rgb(144, 183, 241);
+}
+
+.home header nav a {
+    color: black;
+}
+
+.home header nav ul li a:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.home div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-radius: 10%;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.home img {
+    border: solid white 5px;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    width: 20em;
+    height: 30em;
+    align-items: center;
+}
+
+.home footer section {
+    background-color: rgb(144, 183, 241);
+}
+
+.home footer p {
+    color: black;
+}
+
+.home footer img {
+    border: 0;
+}
+
+
+/*MIAMI*/
+
+.miami {
+    background-image: url(fotos/background/backgroundmiami.jpg);
+    height: 100vh;
+}
+
+.miami nav ul {
+    background-color: rgb(0, 0, 0);
+}
+
+.miami header nav a {
+    color: white;
+}
+
+.miami header nav ul li a:hover {
+    background-color: rgb(253, 165, 242);
+}
+
+
+
+.miamifoto1{
+    float: right;
+    width: 10px;
+    height: 10px;
+
+}
+
+.miamivideo {
+    margin-top: 20px;
+    width: 100%;
+    height: 20em;
+}
+
+.miami footer section {
+    background-color: black;
+}
+
+.miami footer p {
+    color: white;
+}
+
+
+/*SURINAME*/
+
+.suriname {
+    background-image: url(fotos/background/backgroundsuriname.jpg);
+    height: 100vh;
+}
+
+.suriname nav ul {
+    background-color: rgb(135, 18, 18);
+}
+
+.suriname header nav a {
+    color: white;
+}
+
+.suriname header nav ul li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.surinamevideo {
+    width: 100%;
+    height: 20em;
+}
+
+.suriname footer section {
+    background-color: rgb(135, 18, 18);
+}
+
+.suriname footer p {
+    color: white;
+}
+
+
+/*MADEIRA*/
+
+.madeira {
+    background-image: url(fotos/background/backgroundmadeira.jpg);
+    height: 100vh;
+}
+
+.madeira nav ul {
+    background-color: rgb(0, 0, 0);
+}
+
+.madeira header nav a {
+    color: white;
+}
+
+.madeira header nav ul li a:hover {
+    background-color: rgb(255, 135, 74);
+}
+
+.maderia div img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.madeiravideo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20em;
+}
+
+.madeira footer section {
+    background-color: rgb(0, 0, 0);
+}
+
+.madeira footer p {
+    color: white;
+}
+
+
+
+/*LLORET*/
+
+.lloret {
+    background-image: url(fotos/background/backgroundlloret.jpg);
+    height: 100vh;
+}
+
+.lloret nav ul {
+    background-color: rgb(54, 54, 54);
+}
+
+.lloret header nav a {
+    color: white;
+}
+
+.lloret header nav ul li a:hover {
+    background-color: rgb(165, 253, 175);
+}
+
+.lloretvideo {
+    width: 100%;
+    height: 20em;
+}
+
+.lloret footer section {
+    background-color: rgb(54, 54, 54);
+}
+
+.lloret footer p {
+    color: white;
+}
+
+
+
+/*FOOTER*/
+
+footer section {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+}
+
+h3 {
+    font-size: 1em;
+    margin-right: 20px;
+}
+
+footer img {
+    display: flex;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 0;
+    border: 0;
+}
+
+footer p {
+    text-align: center;
+}
